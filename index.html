@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Card Templates Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">💌 E-Templates</div>
+    <input type="text" placeholder="Search templates..." class="search-bar" />
+    <div class="icons">
+      <button id="menuBtn">☰</button>
+      <button id="cartBtn">🛒</button>
+    </div>
+  </header>
+
+  <nav id="menu" class="hidden">
+    <ul>
+      <li><a href="#">For Kids</a></li>
+      <li><a href="#">For Women</a></li>
+      <li><a href="#">For Men</a></li>
+      <li><a href="#">Birthdays</a></li>
+      <li><a href="#">Mother's Day</a></li>
+      <li><a href="#">Father's Day</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="demo-preview">
+      <h1>Explore Our Editable Templates 🎨</h1>
+      <div class="template-grid">
+  
+        <div class="template-card">
+          <img src="demo-fathersday.jpg" alt="Father's Day Template">
+          <h3>Father's Day</h3>
+          <button onclick="tryTemplate('fathersday')">Try Demo</button>
+        </div>
+  
+        <div class="template-card">
+          <img src="demo-birthday.jpg" alt="Birthday Template">
+          <h3>Birthday</h3>
+          <button onclick="tryTemplate('birthday')">Try Demo</button>
+        </div>
+  
+        <div class="template-card">
+          <img src="demo-mothersday.jpg" alt="Mother's Day Template">
+          <h3>Mother's Day</h3>
+          <button onclick="tryTemplate('mothersday')">Try Demo</button>
+        </div>
+  
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <div class="comments">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="comment" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="statusMessage"></p>
+    </div>
+    <div class="socials">
+      <p>Follow us:</p>
+      <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Email</a>
+    </div>
+  </footer>
+</body>
+</html>
